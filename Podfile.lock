@@ -1,63 +1,20 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
-    - AFNetworking/NSURLSession
-  - IQKeyboardManager (4.0.6)
-  - MJExtension (3.0.13)
-  - MJRefresh (3.1.12)
-  - pop (1.0.9)
   - PPHelpMe (1.0.2)
   - PPRevealSideViewController (1.2.3):
     - PPHelpMe
-  - SDWebImage (4.0.0-beta):
-    - SDWebImage/Core (= 4.0.0-beta)
-  - SDWebImage/Core (4.0.0-beta)
-  - SVProgressHUD (2.0.3)
-  - TBActionSheet (1.4.4)
-  - UMengSocialCOM (5.2.1)
-  - YYKit (1.0.9):
-    - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.1.0)
-  - IQKeyboardManager (~> 4.0.6)
-  - MJExtension
-  - MJRefresh
-  - pop
   - PPRevealSideViewController
-  - SDWebImage (= 4.0.0-beta)
-  - SVProgressHUD (~> 2.0.3)
-  - TBActionSheet
-  - UMengSocialCOM
-  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - PPHelpMe
+    - PPRevealSideViewController
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
-  MJExtension: 5932755f451458eefa24239358817f8d291240c7
-  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   PPHelpMe: 243c40d2fad33ebdcc6b158c0db54893e0cc2d14
   PPRevealSideViewController: e74d7b490738b39388f3ab9166f89dbe751560b4
-  SDWebImage: 835b541a1946d371dea2ab41da591dd8d1f93865
-  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
-  TBActionSheet: 735d34cd1016c79a5f5adebcf60029e2beab5d3b
-  UMengSocialCOM: 074c135ce349aa4c8848d3fb8458757bcb6ffb67
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 9e7de1e61a7b7eb76f559e7647f115a088684e24
+PODFILE CHECKSUM: 619e958435ba3c421f0ca15ab32ebd4ba21847d2
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.0

@@ -132,9 +132,7 @@
 		F9DCA73C1DB89A09007659C9 /* DrawerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F9DCA7701DB89D56007659C9 /* Category */,
 				F9DCA7711DB89D56007659C9 /* Class */,
-				F9DCA7751DB89D56007659C9 /* Utility */,
 				F9DCA7401DB89A09007659C9 /* AppDelegate.h */,
 				F9DCA7411DB89A09007659C9 /* AppDelegate.m */,
 				F9DCA7461DB89A09007659C9 /* Main.storyboard */,
@@ -170,13 +168,6 @@
 				F9DCA7641DB89A0A007659C9 /* Info.plist */,
 			);
 			path = DrawerDemoUITests;
-			sourceTree = "<group>";
-		};
-		F9DCA7701DB89D56007659C9 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		F9DCA7711DB89D56007659C9 /* Class */ = {
@@ -216,13 +207,6 @@
 			path = DrawerView;
 			sourceTree = "<group>";
 		};
-		F9DCA7751DB89D56007659C9 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,8 +218,6 @@
 				F9DCA7361DB89A09007659C9 /* Sources */,
 				F9DCA7371DB89A09007659C9 /* Frameworks */,
 				F9DCA7381DB89A09007659C9 /* Resources */,
-				9EC017A181DC31B6630BD57F /* [CP] Embed Pods Frameworks */,
-				7DA1289AB4D67DB6EC7DFC3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -363,43 +345,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawerDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7DA1289AB4D67DB6EC7DFC3C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawerDemo/Pods-DrawerDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9EC017A181DC31B6630BD57F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawerDemo/Pods-DrawerDemo-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
